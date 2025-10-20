@@ -7,12 +7,17 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "json-server server.json -w -d 500",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@radix-ui/react-collapsible": "^1.1.12",
     "@reduxjs/toolkit": "^2.9.1",
     "@tailwindcss/vite": "^4.1.14",
+    "axios": "^1.12.2",
+    "json-server": "^1.0.0-beta.3",
     "lucide-react": "^0.546.0",
     "radix-ui": "^1.4.3",
     "react": "^19.1.1",
@@ -36,6 +41,7 @@
     "tailwindcss": "^4.1.14",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.45.0",
-    "vite": "^7.1.7"
+    "vite": "^7.1.7",
+    "vitest": "^3.2.4"
   }
 }
